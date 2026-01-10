@@ -6,3 +6,9 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
       .scrollIntoView({ behavior: "smooth" });
   });
 });
+
+// Open ERP Modal
+function openErpModal() {
+  const modal = document.getElementById("erpModal");
+  modal.style.display = "block";
+}

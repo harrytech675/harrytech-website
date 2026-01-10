@@ -101,7 +101,7 @@
       </div>
 
       <div class="col-md-4">
-        <div class="service-card">
+        <div class="service-card" onClick="openErpModal()">
           <h4>Web & ERP Solutions</h4>
           <p>Custom ERP, billing, inventory & analytics dashboards.</p>
         </div>
@@ -193,8 +193,16 @@
     </div>
   </div>
 </section>
-
-
+<div id="erpModal" class="modal mt-5">
+  <div class="modal-content modal-dialog modal-lg p-3 bg-light text-dark">
+    <div class="d-flex justify-content-between">
+      <h2>Web & ERP Solutions</h2>
+      <span class="close" onclick="document.getElementById('erpModal').style.display='none'">&times;</span>
+    </div>
+    <p>Our custom ERP solutions are designed to streamline your business operations, improve efficiency, and provide real-time analytics. Whether you need inventory management, billing systems, or comprehensive dashboards, we tailor our solutions to fit your unique needs.</p>
+    <p>Contact us to learn more about how our ERP solutions can transform your business.</p>
+  </div>
+</div>
 <!-- FOOTER -->
 <footer>
   <div class="container">
